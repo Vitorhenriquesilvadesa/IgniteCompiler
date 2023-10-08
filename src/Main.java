@@ -1,11 +1,9 @@
-import org.ignitescript.compiler.types.IgnObject;
+import org.ignitescript.compiler.types.natives.IgnInteger;
 
 public class Main {
 
     public static void main(String[] args) {
-        IgnObject obj = new IgnObject();
-        IgnObject obj2 = new IgnObject();
-        System.out.println(obj);
-        System.out.println(obj2);
+        IgnInteger i = new IgnInteger(10);
+        System.out.println(i.getHash());
     }
 }

@@ -1,4 +1,4 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
 public enum NativeType {
     BOOLEAN,

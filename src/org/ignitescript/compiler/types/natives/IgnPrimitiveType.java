@@ -1,4 +1,4 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
 /**
  * This interface is implemented by all primitive types present

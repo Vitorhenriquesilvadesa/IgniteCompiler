@@ -1,8 +1,11 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
+import org.ignitescript.compiler.annotations.IgnNativeType;
+
+@IgnNativeType
 public class IgnString extends IgnPrimitiveTypeImpl<String> {
 
-    protected IgnString(String value) {
+    public IgnString(String value) {
         super(value);
     }
 

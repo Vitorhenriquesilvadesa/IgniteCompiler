@@ -1,5 +1,9 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
+import org.ignitescript.compiler.annotations.IgnNativeType;
+import org.ignitescript.compiler.types.IgnHashGenerator;
+
+@IgnNativeType
 public class IgnObject {
 
     private String hash;

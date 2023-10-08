@@ -8,7 +8,7 @@ public final class IgnHashGenerator {
     public static String next(Object o) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] hashBytes = md.digest(new String(Integer.toString(o.hashCode()) + Long.toString(System.currentTimeMillis()).hashCode()).getBytes());
+            byte[] hashBytes = md.digest((Integer.toString(o.hashCode()) + Long.toString(System.currentTimeMillis()).hashCode()).getBytes());
             StringBuilder sb = new StringBuilder();
             sb.append("@ign_");
 

@@ -1,7 +1,10 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
+import org.ignitescript.compiler.annotations.IgnNativeType;
 import org.ignitescript.compiler.exceptions.IgnInvalidArgumentException;
 
+
+@IgnNativeType
 public class IgnBoolean extends IgnPrimitiveTypeImpl<Boolean> {
 
     public IgnBoolean(boolean value) {

@@ -1,4 +1,4 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
 public abstract class IgnPrimitiveTypeImpl<T> extends IgnObject implements IgnPrimitiveType<T>{
     protected T value;

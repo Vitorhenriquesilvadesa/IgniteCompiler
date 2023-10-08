@@ -1,10 +1,12 @@
-package org.ignitescript.compiler.types;
+package org.ignitescript.compiler.types.natives;
 
+import org.ignitescript.compiler.annotations.IgnNativeType;
 import org.ignitescript.compiler.exceptions.IgnInvalidArgumentException;
 
+@IgnNativeType
 public class IgnChar extends IgnPrimitiveTypeImpl<Character>{
 
-    protected IgnChar(Character value) {
+    public IgnChar(Character value) {
         super(value);
     }
 
@@ -20,5 +22,9 @@ public class IgnChar extends IgnPrimitiveTypeImpl<Character>{
         } else {
             throw new IgnInvalidArgumentException("Invalid char value: " + value);
         }
+    }
+
+    public IgnInteger toInteger(){
+        return new IgnInteger((int)super.getValue());
     }
 }
