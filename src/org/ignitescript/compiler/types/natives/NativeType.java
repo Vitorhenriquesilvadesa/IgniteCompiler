@@ -10,5 +10,6 @@ public enum NativeType {
     DOUBLE,
     STRING,
     OBJECT,
-    VOID
+    VOID,
+    NULL
 }

@@ -12,7 +12,7 @@ public class IgnChar extends IgnPrimitiveTypeImpl<Character>{
 
     @Override
     public NativeType getJavaType() {
-        return null;
+        return NativeType.CHAR;
     }
 
     @Override
